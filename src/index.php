@@ -10,8 +10,8 @@ $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 
 try {
     $conn = new PDO($dsn, $user, $password, $options);
-    echo "ConexÃ£o com PostgreSQL estabelecida com sucesso.";
+    echo "Conexão com PostgreSQL estabelecida com sucesso.";
 } catch (PDOException $e) {
-    echo "Erro de conexÃ£o: " . $e->getMessage();
+    echo "Erro de conexão: " . $e->getMessage();
 }
 ?>
